@@ -9,4 +9,4 @@ config.js	requirejs配置文件
 main.js	主入口文件
 
 css sass
-jquery 2.0
+jquery 3.2.0
