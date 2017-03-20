@@ -1,7 +1,7 @@
 require.config({
     baseUrl : "./src",
-    paths :{
-        jquery:"./lib/jquery.min",
+    paths:{
+        "jquery":"./lib/jquery.min",
         vue:"./lib/vue.min",
         vueResource:"./lib/vue-resource.min",
         vueX:"./lib/vuex.min",

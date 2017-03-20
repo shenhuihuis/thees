@@ -8,5 +8,3 @@ vuex	vuex文件详细
 config.js	requirejs配置文件
 main.js	主入口文件
 
-css sass
-jquery 3.2.0
