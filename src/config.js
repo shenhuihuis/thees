@@ -1,12 +1,13 @@
+var fiɡə=fiɡə || "" 
 require.config({
-    baseUrl : "./src",
+    baseUrl : "./"+fiɡə+"src",
     paths:{
         "jquery":"./lib/jquery.min",
-        vue:"./lib/vue.min",
+        vue:"./lib/vue",
         vueResource:"./lib/vue-resource.min",
         vueX:"./lib/vuex.min",
         api :"./api/api",
-        public:"./lib/public"
+        rotute:"./api/rotute"
     },
     packages: [
         {

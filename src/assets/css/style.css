@@ -1,0 +1,362 @@
+@charset "UTF-8";
+body,
+ul,
+li,
+span,
+b,
+p,
+strong,
+ol,
+dl,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+a,
+div,
+img,
+textarea {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  min-width: 1200px;
+  color: #666; }
+
+body,
+html {
+  height: 100%; }
+
+img {
+  border: 0 none;
+  vertical-align: top; }
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: auto;
+  *zoom: 1; }
+
+.content:after {
+  content: "";
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  display: block; }
+
+body {
+  font-family: "微软雅黑";
+  position: relative;
+  background: #fff; }
+
+li {
+  font-family: "微软雅黑";
+  list-style: none; }
+
+input {
+  outline: 0;
+  font-family: "微软雅黑"; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.lf {
+  float: left; }
+
+.rt {
+  float: right; }
+
+.head .header {
+  line-height: 30px;
+  height: 30px;
+  background: #333333;
+  font-size: 12px;
+  margin-bottom: 28px; }
+  .head .header .content {
+    overflow: visible; }
+  .head .header .lf {
+    color: #fff;
+    opacity: 0.6; }
+    .head .header .lf span {
+      float: left;
+      padding-right: 20px; }
+    .head .header .lf .loginno, .head .header .lf .loginhas {
+      float: left; }
+    .head .header .lf .login {
+      color: #108c2a;
+      padding-right: 8px;
+      display: inline-block; }
+    .head .header .lf .register {
+      color: #fff; }
+  .head .header .rt li {
+    float: left;
+    position: relative;
+    padding: 0 16px;
+    background: url("../img/x.png") no-repeat right center; }
+    .head .header .rt li .fo {
+      display: block;
+      color: #fff;
+      opacity: 0.6; }
+    .head .header .rt li a:hover {
+      color: #549966; }
+    .head .header .rt li .downapp {
+      padding-left: 16px;
+      background: url("../img/phone.png") no-repeat left center; }
+  .head .header .rt li.last {
+    background: none;
+    transition-duration: 500ms;
+    background: #3b3b3b;
+    width: 88px; }
+    .head .header .rt li.last .fo {
+      display: block;
+      padding-left: 24px;
+      background: url("../img/sp.png") no-repeat left 8px; }
+    .head .header .rt li.last i {
+      font-style: normal;
+      padding: 0 2px; }
+    .head .header .rt li.last .buycar {
+      width: 316px;
+      position: absolute;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 2px 4px #999;
+      top: 30px;
+      z-index: 111;
+      display: none;
+      padding-top: 26px; }
+      .head .header .rt li.last .buycar dd {
+        display: block;
+        width: 276px;
+        padding: 10px 0;
+        overflow: hidden;
+        margin: 0 20px;
+        border-bottom: 1px solid #e0e0e0; }
+        .head .header .rt li.last .buycar dd a {
+          display: block; }
+        .head .header .rt li.last .buycar dd img {
+          float: left;
+          margin-right: 12px; }
+        .head .header .rt li.last .buycar dd .tit {
+          line-height: 20px;
+          color: #333;
+          width: 100px;
+          margin-top: 6px;
+          float: left; }
+        .head .header .rt li.last .buycar dd .pay {
+          float: right;
+          width: 70px;
+          line-height: 20px;
+          color: #333;
+          margin-top: 6px; }
+        .head .header .rt li.last .buycar dd a:hover .tit {
+          color: #549966; }
+      .head .header .rt li.last .buycar dd:nth-last-child(2) {
+        border-bottom: 0 none; }
+      .head .header .rt li.last .buycar dt {
+        height: 60px;
+        padding-top: 14px;
+        padding-left: 20px;
+        background: #fafafa; }
+        .head .header .rt li.last .buycar dt .l {
+          float: left; }
+          .head .header .rt li.last .buycar dt .l p {
+            line-height: 16px;
+            display: block;
+            color: #999; }
+          .head .header .rt li.last .buycar dt .l .mony {
+            line-height: 30px;
+            color: #d70000; }
+            .head .header .rt li.last .buycar dt .l .mony span {
+              font-size: 24px;
+              font-family: Arial; }
+        .head .header .rt li.last .buycar dt a {
+          display: block;
+          float: right;
+          width: 130px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background: #0c643c;
+          color: #fff;
+          margin-right: 20px; }
+        .head .header .rt li.last .buycar dt a:hover {
+          background: #549966;
+          color: #fff; }
+  .head .header .rt li.last:hover {
+    opacity: 1;
+    background: #fff; }
+    .head .header .rt li.last:hover .fo {
+      opacity: 1;
+      background-image: url("../img/g.png");
+      color: #0c643c; }
+    .head .header .rt li.last:hover .buycar {
+      display: block; }
+.head .cter {
+  margin-bottom: -24px; }
+  .head .cter .ytlogo {
+    width: 324px;
+    height: 49px;
+    display: block;
+    float: left;
+    margin-top: 16px;
+    margin-right: 86px;
+    background: url("../img/yt.png") no-repeat; }
+  .head .cter .tblogo {
+    width: 324px;
+    height: 49px;
+    display: block;
+    float: left;
+    margin-top: 16px;
+    margin-right: 86px;
+    background: url("../img/tblogo.png") no-repeat; }
+  .head .cter .findbox {
+    float: left;
+    margin-top: 16px;
+    position: relative;
+    height: 68px; }
+    .head .cter .findbox .find {
+      width: 530px;
+      height: 40px;
+      border: 2px solid #0c643c; }
+      .head .cter .findbox .find .selt {
+        width: 110px;
+        float: left;
+        background: url("../img/fd.png") no-repeat 12px 14px; }
+        .head .cter .findbox .find .selt dt {
+          width: 110px;
+          text-align: center;
+          font-size: 13px;
+          color: #333;
+          line-height: 40px;
+          height: 40px;
+          cursor: pointer;
+          background: url("../img/sj.png") no-repeat 90% center; }
+        .head .cter .findbox .find .selt dd {
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+          line-height: 30px;
+          display: none; }
+      .head .cter .findbox .find input {
+        width: 338px;
+        float: left;
+        border: 0 none;
+        height: 40px;
+        background: none; }
+      .head .cter .findbox .find .sub {
+        width: 82px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        float: right;
+        background: #0c643c; }
+    .head .cter .findbox .ytfind {
+      padding-left: 34px;
+      background: url("../img/fd.png") no-repeat 12px 14px; }
+    .head .cter .findbox .key {
+      position: absolute;
+      bottom: 0;
+      line-height: 24px; }
+      .head .cter .findbox .key a {
+        padding-right: 8px;
+        font-size: 12px; }
+      .head .cter .findbox .key a:hover {
+        color: #549966; }
+      .head .cter .findbox .key .gre {
+        color: #0c643c; }
+.head .ewm {
+  width: 103px;
+  float: right;
+  padding-top: 103px;
+  background: url("../img/ewm.jpg") no-repeat;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px; }
+.head .dls {
+  line-height: 38px;
+  border-bottom: 1px solid #0c643c; }
+  .head .dls .all {
+    float: left;
+    width: 190px;
+    background: #0c643c;
+    height: 38px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center; }
+  .head .dls li {
+    float: left;
+    margin-left: 26px; }
+    .head .dls li a:hover {
+      color: #549966; }
+
+.footer {
+  padding-bottom: 10px;
+  padding-top: 100px;
+  background: url("../img/fo.png") no-repeat center 28px #eaeaea; }
+  .footer .fot {
+    border-top: 1px  solid #dedede;
+    padding-top: 24px; }
+    .footer .fot dl {
+      margin-right: 70px;
+      margin-left: 30px;
+      float: left; }
+      .footer .fot dl dt {
+        line-height: 16px;
+        font-size: 14px;
+        margin-bottom: 8px; }
+      .footer .fot dl dd {
+        line-height: 22px;
+        font-size: 12px; }
+        .footer .fot dl dd a {
+          color: #888;
+          transition-duration: 500ms; }
+      .footer .fot dl a:hover {
+        color: #549966; }
+    .footer .fot .rt {
+      width: 220px;
+      text-align: right; }
+      .footer .fot .rt .tel {
+        line-height: 30px;
+        color: #333;
+        font-size: 24px;
+        font-family: Arial; }
+      .footer .fot .rt .say {
+        font-size: 13px;
+        color: #666;
+        line-height: 24px; }
+      .footer .fot .rt .ewm {
+        margin-top: 16px;
+        padding-right: 118px;
+        height: 103px;
+        line-height: 28px;
+        padding-top: 20px;
+        font-size: 12px;
+        background: url("../img/ewm.jpg") no-repeat right top; }
+  .footer .lfot {
+    border-top: 1px  solid #dedede;
+    margin-top: 10px;
+    padding-top: 14px;
+    text-align: center; }
+    .footer .lfot .ac {
+      line-height: 22px;
+      font-size: 12px; }
+      .footer .lfot .ac a {
+        transition-duration: 500ms; }
+      .footer .lfot .ac a:hover {
+        color: #549966; }
+    .footer .lfot .bot {
+      line-height: 24px;
+      color: #999;
+      font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */
