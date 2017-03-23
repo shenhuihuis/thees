@@ -12,6 +12,7 @@ main.js	主入口文件
 rotute.js 伪路由器 所有公共子父路径  需全局管理fiɡə
 子页面 head 添加 '<script>fiɡə="../";</script>' 
 子页面 config.js更改
+vue暂时改为vue.js 开发版 开启报错提示 
 
 组件 
 footer.js footer      <div id="footer"><my-footer></my-footer></div>
