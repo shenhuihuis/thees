@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="../src/assets/css/style.css">
+<script>fiɡə="../";</script>
+<!--[if lte IE8]><script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='</script><![endif]-->
+<head>
+    <body>
+        <div id="head">
+          <my-signhead></my-signhead>
+        </div>
+        <div id="app" v-cloak>
+            <vue-form :state="formstate" @submit.prevent="onSubmit">
+                <validate tag="label">
+                   <input type="tel" class="form-control" v-model.lazy="model.mobileTel" pattern="^1[345678][0-9]{9}$" required name="mobileTel" />
+                    <field-messages name="mobileTel" show="$submitted || $dirty || $touched">
+                       <div slot="required">手机号码格式错误</div>
+                       <div slot="pattern">手机号码必须填写</div>
+                    </field-messages>
+                </validate>
+
+                <validate tag="label">
+                   <input type="password" class="form-control" v-model.lazy="model.password" min-length="6" required name="password" />
+                    <field-messages name="password" show="$submitted || $dirty || $touched">
+                        <div slot="required">密码必须填写</div>
+                    </field-messages>
+                </validate>
+               
+                <button class="btn btn-primary" type="submit" >Submit</button>
+                <!-- <pre>{{ formstate }}</pre> -->
+            </form>
+        </div>
+
+        <div id="footer">
+            <my-footer></my-footer>
+        </div>
+         <script src="../src/require.js" data-main="../src/config"></script>
+    </body>
+</html>

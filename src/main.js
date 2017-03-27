@@ -3,7 +3,11 @@ define(function(require){
     var ythead =  require("component/ythead")
     var tbhead =  require("component/tbhead")
     var footer =  require("component/footer")
+    var signhead =  require("component/signhead")
+    
+
     var $ = require("jquery");
+
     var ythead=new Vue({
         el : "#head",
         components:{
@@ -20,6 +24,13 @@ define(function(require){
         el : "#footer",
         components:{
             'my-footer': footer
+        }
+    });
+
+    var signhead=new Vue({
+        el : "#head",
+        components:{
+            'my-signhead': signhead
         }
     });
 });
