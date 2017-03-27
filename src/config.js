@@ -5,7 +5,7 @@ require.config({
         "jquery":"./lib/jquery.min",
         vue:"./lib/vue",
         vueResource:"./lib/vue-resource.min",
-        vueX:"./lib/vuex.min",
+        vueX:"./lib/vuex",
         api :"./api/api",
         rotute:"./api/rotute"
     },

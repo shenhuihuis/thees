@@ -11,10 +11,8 @@ define(function(require){
         },
         template:`
         <div class="head">
-                   
             <div class="content cter">
                 <a  class="tblogo" :href="route.index"></a>
-                
                 <div class="rt ">
                 </div>
             </div>

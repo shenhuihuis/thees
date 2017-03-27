@@ -20,17 +20,16 @@ define(function(require){
             'my-tbhead': tbhead
         }
     });
-    var footer=new Vue({
-        el : "#footer",
-        components:{
-            'my-footer': footer
-        }
-    });
-
     var signhead=new Vue({
         el : "#head",
         components:{
             'my-signhead': signhead
+        }
+    });
+    var footer=new Vue({
+        el : "#footer",
+        components:{
+            'my-footer': footer
         }
     });
 });
