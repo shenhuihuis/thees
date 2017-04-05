@@ -1,9 +1,9 @@
 define(function(require){
     var api={
-        ip: ["http://app.33etong.com/",       //省市区 获取验证码
-             "http://goods.33etong.com/",    //商品相关 
-             "http://user.33etong.com/",     //用户相关 
-             "http://order.33etong.com"     //订单相关  
+        ip: ["http://122.224.187.90:8007/ssyt-app/",       //省市区 获取验证码
+             "http://122.224.187.90:8004/ssyt-goods/",    //商品相关 
+             "http://122.224.187.90:8006/ssyt-user/",     //用户相关 
+             "http://122.224.187.90:8005/ssyt-order/"     //订单相关  
         ],
         person:null,
         Value: (function() {
